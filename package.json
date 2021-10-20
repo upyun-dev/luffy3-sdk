@@ -1,0 +1,28 @@
+{
+  "name": "luffy3-sdk",
+  "version": "1.0.0",
+  "description": "对luffy3进行封装",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/upyun-dev/luffy3-sdk.git"
+  },
+  "keywords": [
+    "Luffy3"
+  ],
+  "author": "tiege.victor@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/upyun-dev/luffy3-sdk/issues"
+  },
+  "homepage": "https://github.com/upyun-dev/luffy3-sdk#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "got": "^11.8.2",
+    "jest": "^26.0.1",
+    "lodash": "^4.17.21"
+  }
+}
