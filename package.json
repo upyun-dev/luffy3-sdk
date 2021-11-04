@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/upyun-dev/luffy3-sdk#readme",
   "dependencies": {
-    "chai": "^4.3.4",
     "got": "^11.8.2",
-    "jest": "^26.0.1",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "jest": "^26.0.1"
   }
 }
