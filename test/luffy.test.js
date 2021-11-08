@@ -76,7 +76,7 @@ describe('LuffyThree test', () => {
     // });
     it('获取指定项目下的服务列表', async function () {
       const Luffy3 = new LuffyThree(baseUrl, accessKey, accessSecret);
-      const res = await Luffy3.listService(projectId, {page: 1, pageSize: 10});
+      const res = await Luffy3.listService(projectId, {page: 1, itemsPerPage: 10});
       expect(res).to.be.a('object');
       expect(res.items[0].spec).to.be.a('object');
       expect(res.items[0].spec.name).to.be.a('string');
@@ -92,7 +92,7 @@ describe('LuffyThree test', () => {
 
   //   it('获取容器服务实例列表', async function () {
   //     const luffy3 = new LuffyThree(email, password, baseUrl);
-  //     const res = await luffy3.listPods(projectId, appId, {page: 1, pageSize: 10});
+  //     const res = await luffy3.listPods(projectId, appId, {page: 1, itemsPerPage: 10});
   //     expect(res).to.be.a('object');
   //     expect(res.items).to.be.a('array');
   //     expect(res.totalItems).to.be.a('number');
