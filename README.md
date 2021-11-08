@@ -4,7 +4,7 @@
 
 ```JavaScript
 const Luffy3 = require('luffy3-sdk');
-const luffy3 = new Luffy3(email, password, baseUrl);
+const luffy3 = new Luffy3(baseUrl, accessKey, accessSecret);
 ```
 
 ### Methods

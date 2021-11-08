@@ -6,10 +6,8 @@ const password = 'shangzhibo';
 const baseUrl = 'http://10.0.6.27:30081/api/v2.1';
 const projectId = '142'; // emma
 const appId = 'waston';
-// const accessKey = 'myKey123';
 const accessKey = 'JtLzjiUGccsn74pxh42hGT52';
 const accessSecret = 'Sdj20xEjDlTeBs1iMbEM0R8i07Ndeb';
-// const accessSecret = 'mySecret123';
 
 describe('LuffyThree test', () => {
 
