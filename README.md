@@ -8,16 +8,7 @@ const luffy3 = new Luffy3(baseUrl, accessKey, accessSecret);
 ```
 
 ### Methods
-
-#### 1. 获取token
-
-```JavaScript
-/**
- * @return  {string}
- */
-luffy3.updateToken();
-```
-#### 2. 获取项目下的服务列表
+#### 1. 获取项目下的服务列表
 
 ```JavaScript
 /**
@@ -27,7 +18,7 @@ luffy3.updateToken();
 luffy3.listService(projectId);
 ```
 
-#### 3.获取服务的详细信息
+#### 2.获取服务的详细信息
 
 ```JavaScript
 /**
@@ -37,7 +28,7 @@ luffy3.listService(projectId);
  */
 luffy3.getService(projectId, appId);
 ```
-#### 4.获取容器服务实例列表
+#### 3.获取容器服务实例列表
 
 ```JavaScript
 /**
@@ -47,7 +38,7 @@ luffy3.getService(projectId, appId);
  */
 luffy3.listPods(projectId, appId)
 ```
-#### 5.创建服务统一入口
+#### 4.创建服务统一入口
 
 ```JavaScript
 /**
@@ -57,7 +48,7 @@ luffy3.listPods(projectId, appId)
  */
 luffy3.createService(projectId, options);
 ```
-#### 6.重启指定服务
+#### 5.重启指定服务
 
 ```JavaScript
 /**
@@ -67,7 +58,7 @@ luffy3.createService(projectId, options);
  */
 luffy3.restartService(projectId, appId);
 ```
-#### 7.删除服务
+#### 6.删除服务
 
 ```JavaScript
 /**
@@ -79,6 +70,14 @@ luffy3.destroyService(projectId, appId);
 ```
 ...
 
+#### 7. 获取token --- 已废弃
+
+```JavaScript
+/**
+ * @return  {string}
+ */
+luffy3.updateToken();
+```
 
 ### 单元测试
 ```cmd
