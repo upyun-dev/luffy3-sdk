@@ -52,6 +52,46 @@ describe('LuffyThree test', () => {
       expect(res).to.be.a('object');
     });
 
+    it('创建定时任务', async function () {
+      const options = {
+        "kind": "CronJob",
+        "name": "emmaWWcom",
+        "description": "封装接口 创建的测试",
+        "containers": [
+            {
+                "cpuRequest": 0.1,
+                "cpuLimit": 1,
+                "image": "10.0.5.14:30443/szbo/alpine:latest",
+                "imagePullPolicyAlways": true,
+                "memoryRequest": 107374182,
+                "memoryLimit": 1073741824,
+                "command": "/bin/bash -c \"while true; do sleep 1; done\" ",
+                "envFrom": [],
+                "envs": {},
+                "volumeMounts": [
+                    {
+                        "mountPath": "/temp",
+                        "name": "emma-data",
+                        "volumeKind": "PVC"
+                    }
+                ]
+            }
+        ],
+        "activeDeadlineSeconds": 600,
+        "backoffLimit": 3,
+        "policy": {
+            "nodeSelectorRequirements": []
+        },
+        "schedule": "*/1 * * * *",
+        "concurrencyPolicy": "Forbid",
+        "jobsHistoryLimit": 5,
+        "suspend": false
+      };
+      const luffy3 = new LuffyThree(baseUrl, accessKey, accessSecret);
+      const res = await luffy3.createSchedulesService(projectId, options);
+      expect(res).equal('{}');
+    });
+
     it('重启指定服务', async function () {
       const luffy3 = new LuffyThree(baseUrl, accessKey, accessSecret);
       const res = await luffy3.restartService(projectId, appId);
