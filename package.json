@@ -1,6 +1,6 @@
 {
   "name": "luffy3-sdk",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "对luffy3进行封装",
   "main": "index.js",
   "scripts": {
